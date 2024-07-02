@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Learn About Hawaii</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="bg-info">
+
+<!--Title for this web page -->    
+<marquee><h1 class="text-white">Hawaii Awaits</h1></marquee>
+
+<div id="main-container" class="container pt-2 pb-5 bg-light">
+
+    <br><br>
+
+    <!-- Map of Hawaii & discribtion -->
+    <div class="text-center"> 
+        <img src="images/HawaiiMap.jpg" class="img-fluid" alt="Hawaii Map">
+    </div>
+
+    <br><br>
+    <div>
+        <h2 class="p-3 mb-2 bg-primary text-white text-center">Here is a map of the Hawaii islands.</h2>
+    </div>
+    <br>
+    <div>
+        <p class="container mb-5 fs-4 text-center">There are 137 islands in the state which includes four islands of the Midway Atoll. <br>
+            An island in this sense may also include much smaller and typically uninhabited islets, rocks, coral reefs, and atolls.</p>
+    </div>
+
+
+    <br><br>
+
+
+    <!-- List of Hawaii island for tour in 2024 -->
+    <div id="2024-List" class="container text-center mb-5 fs-4">
+
+        <div class="bg-secondary text-white text-center mb-4"><h3>Popluar Hawai Islands</h3></div>
+    
+        <div class="row">
+        <div class="col-lg-2 text-primary">#1 Maui</div>
+        <div class="col-lg-2 text-secondary">#2 Kaua'i</div>
+        <div class="col-lg-2 text-success">#3 Hawaii - The Big Island</div>
+        <div class="col-lg-2 text-danger">#4 Molokai</div>
+        <div class="col-lg-2 text-warning">#5 Oahu</div>
+        <div class="col-lg-2 text-info">#6 Lanai</div>
+        </div>
+
+    </div>
+
+
+
+    <!-- table of Hawaii islands information --> 
+    <div>
+        <h2 class="text-center">Islands Information</h2>
+    </div>
+
+    <table class="table table-striped table-hover">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Island</th>
+            <th scope="col">Population</th>
+            <th scope="col">Size</th>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td class="text-primary">Maui</td>
+            <td>164,351</td>
+            <td>727 mi2</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td class="text-secondary">Kaua'i</td>
+            <td>71,838</td>
+            <td>552 mi2</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td class="text-success">Hawaii - The Big Island</td>
+            <td>200,629</td>
+            <td>4,028 mi2</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td class="text-danger">Molokai</td>
+            <td>7,404</td>
+            <td>260 mi2</td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td class="text-warning">Oahu</td>
+            <td>1,016,508</td>
+            <td>597 mi2</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td class="text-info">Lanai</td>
+            <td>3,102</td>
+            <td>140.5 mi2</td>
+        </tr>
+    </table>
+
+    <br> 
+
+    <!-- Create a form to add to the island information table -->
+    <div>
+        <h2 class="text-center">Enter Another Island Information</h2>
+    </div>
+
+    <form>
+        <div class = "form-group">
+            <label for="tableNumber">Island List #</label>
+            <input type="text" class="form-control" id="tableNumber" placeholder="Please Enter #">
+        </div>
+        <div class="form-group">
+            <label for="tableIslandname">Island Name</label>
+            <input type="text" class="form-control" id="tableIslandname" placeholder="Please Enter Island Name">
+        </div>
+        <div class="form-group">
+            <label for="tableIslandpopulation">Island Population</label>
+            <input type="text" class="form-control" id="tableIslandpopulation" placeholder="Please Enter Island Population">
+        </div>
+        <div class="form-group">
+            <label for="tableIslandsize">Island Size</label>
+            <input type="text" class="form-control" id="tableIslandsize" placeholder="Please Enter Island Size">
+        </div>
+        <button type="button" onclick="addIntoTable()" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!--Link to the javascript function of adding a row -->
+    <script src="index.js"></script>
+
+</div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
